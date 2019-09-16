@@ -1,6 +1,7 @@
 # Generate the training data
-Due to large file sizes none of the training data is included. You can generate it yourself.
+Due to large file sizes none of the training data is included. You can generate it yourself (assuming you have [Node installed](https://nodejs.org/en/)).
 1. run `node generateRawUtterances.js` to generate the training data from parts of the `interaction-model.json`. The generated training data file is in the `data` directory.
+1. run `node createCsv.js`.
 
 # Anaconda Distribution Python
 This project assumes you are working with [Anaconda Distribution Python](https://www.anaconda.com/distribution/).
@@ -10,7 +11,7 @@ This project assumes you are working with [Anaconda Distribution Python](https:/
 1. Once finished, deactivte the environment with WINDOWS: `deactivate` or LINUX, macOS: `source deactivate`.
 
 # Jupyter Notebook
-This project makes use of Jupyter Notebooks.
+This project makes use of [Jupyter](https://jupyter.org/) Notebooks.
 1. To activate the notebook, from within the repository run `jupyter notebook`.
 1. Either a browser will open automatically to [http://localhost:8888/tree](http://localhost:8888/tree) or you will have to manually open a browser and navigate there. 
 1. The notebook should be running automatically. To stop the notebook, in the browser go to [http://localhost:8888/tree#running](http://localhost:8888/tree#running) and select 'Shutdown'.
